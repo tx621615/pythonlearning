@@ -3,12 +3,12 @@
 '''
 dict:
     1.创建{},key唯一，且key不可变,---key只能为number,string,tuple
-    2.访问 dict['key']
-    3.修改 dict['key'] =
-    4.增加 dict['newkey'] = newvalue
+    2.访问 dict[key]
+    3.修改 dict[key] =
+    4.增加 dict[newkey] = newvalue
     5.查: key in dict
     6.长度: len(dict)---key数
-    7.删除: del dict['key'] , 清空： dict.clear()
+    7.删除: del dict[key] , 清空： dict.clear()
 
 
 
