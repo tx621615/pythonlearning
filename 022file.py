@@ -55,3 +55,8 @@ f.write("fsafasgha")
 f.seek(5, 0) # 注意指针位于字符串之间
 print(f.read(2))
 f.close()
+
+# 从头开始写会把原来文本文件内容全部删除，而从尾部开始写不会删除
+f = open("filetest.txt", "a")
+f.write("\nadd something in the end")
+f.close()
