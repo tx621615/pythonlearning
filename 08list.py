@@ -9,6 +9,7 @@
     其中最常用的为list and tuple
     不可变类型--number, string, tuple
 '''
+from itertools import product
 
 '''
 list主要操作：
@@ -69,3 +70,20 @@ print('2 在list中的位置: ', l.index(2))
 squares = [1, 4, 9, 16, 25]
 squares += [36, 49, 64, 81, 100]
 print(squares)
+
+newlist = ['a', 'b', 'c']
+print(enumerate(newlist))  # 相当于产生一个元组列表
+# 访问元组列表的方法,多个变量组合
+for index, value in enumerate(newlist):
+    print(index, value)
+
+# product函数产生元组列表---相当于笛卡尔积
+# 访问三个列表中元素和为12的元素
+
+
+def find_twelve(nlist1, nlist2, nlist3):
+    for n1, n2, n3 in product(nlist1, nlist2, nlist3):
+        if n1 + n2 + n3 == 12:
+            return n1, n2, n3  # 相当于返回一个tuple
+
+next
